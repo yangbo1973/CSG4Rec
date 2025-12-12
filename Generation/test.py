@@ -174,13 +174,13 @@ if __name__ == "__main__":
     from sendEmil import EmailSender
     sender = EmailSender(
         sender_email="",
-        auth_code=""  # 在QQ邮箱设置 → 账户 → 开启SMTP服务后获取
+        auth_code=""  
     )
     sender.send_email(
         to_email="",
         subject="",
         content="",
-        # attachments=["./result.json"]  # 可选，传文件路径列表
+        # attachments=["./result.json"] 
     )
     
     import sys, torch, gc
